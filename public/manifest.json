@@ -1,6 +1,6 @@
 {
-  "name": "AnddersonRds - Boilerplate v2.0",
-  "short_name": "Boilerplate v2.0",
+  "name": "dev.news",
+  "short_name": "dev.news",
   "icons": [
     {
       "src": "/img/sua-logo.png",
@@ -13,9 +13,9 @@
       "sizes": "512x512"
     }
   ],
-  "background_color": "#06092B",
-  "description": "Boilerlate utilizando Typescript, React, NextJS e Styled Components!",
+  "background_color": "#121214",
+  "description": "Posts sobre o universo dev.",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#06092B"
+  "theme_color": "#121214"
 }

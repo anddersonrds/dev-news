@@ -9,15 +9,17 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>AnddersonRds - Boilerplate v2.0</title>
+        <title>dev.news</title>
         <link rel="shortcut icon" href="/img/favicon.ico" />
         <link rel="apple-touch-icon" href="/img/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#06092B" />
-        <meta
-          name="description"
-          content="A boilerplate configured for all your nexts projects"
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+          rel="stylesheet"
         />
+        <meta name="theme-color" content="#121214" />
+        <meta name="description" content="Posts sobre o universo dev." />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
