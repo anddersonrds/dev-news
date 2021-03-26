@@ -5,6 +5,8 @@ import Head from 'next/head'
 import GlobalStyles from 'styles/global'
 import theme from 'styles/theme'
 
+import Header from 'components/Header'
+
 function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
@@ -22,6 +24,7 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Posts sobre o universo dev." />
       </Head>
       <GlobalStyles />
+      <Header />
       <Component {...pageProps} />
     </ThemeProvider>
   )

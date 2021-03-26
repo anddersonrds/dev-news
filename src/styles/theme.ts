@@ -23,17 +23,19 @@ export default {
     cyan: '#61dafb',
     gray: '#e1e1e6',
     darkGray: '#a8a8b3',
+    softBlack: '#29292e',
     black: '#121214',
     mainBg: '#121214'
   },
   spacings: {
-    xxsmall: '0.8rem',
-    xsmall: '1.6rem',
-    small: '2.4rem',
-    medium: '3.2rem',
-    large: '4.0rem',
-    xlarge: '4.8rem',
-    xxlarge: '5.6rem'
+    xxsmall: '1rem',
+    xsmall: '1.5rem',
+    small: '2rem',
+    medium: '2.5rem',
+    large: '3rem',
+    xlarge: '3.5rem',
+    xxlarge: '4rem',
+    huge: '5rem'
   },
   layers: {
     base: 10,
@@ -43,7 +45,7 @@ export default {
     alwaysOnTop: 50
   },
   transition: {
-    default: '0.3s ease-in-out',
-    fast: '0.1s ease-in-out'
+    default: '0.2s',
+    fast: '0.1s'
   }
 } as const
