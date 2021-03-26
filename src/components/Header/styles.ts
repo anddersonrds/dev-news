@@ -16,6 +16,10 @@ export const Content = styled.div`
     height: ${theme.spacings.huge};
     margin: 0 auto;
     padding: 0 ${theme.spacings.small};
+
+    button {
+      margin-left: auto;
+    }
   `}
 `
 

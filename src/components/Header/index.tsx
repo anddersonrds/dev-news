@@ -1,3 +1,5 @@
+import GithubButton from 'components/GithubButton'
+
 import * as S from './styles'
 
 const Header = () => (
@@ -10,6 +12,7 @@ const Header = () => (
         </a>
         <a href="/">Posts</a>
       </S.Navigation>
+      <GithubButton />
     </S.Content>
   </S.Wrapper>
 )

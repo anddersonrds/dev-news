@@ -24,6 +24,7 @@ export default {
     gray: '#e1e1e6',
     darkGray: '#a8a8b3',
     softBlack: '#29292e',
+    githubBtn: '#1f2729',
     black: '#121214',
     mainBg: '#121214'
   },

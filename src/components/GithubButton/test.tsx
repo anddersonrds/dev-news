@@ -1,11 +1,10 @@
-import { render, screen } from '@testing-library/react'
 import { renderWithTheme } from 'utils/tests/helpers'
 
-import {{pascalCase name}} from '.'
+import GithubButton from '.'
 
-describe('<{{pascalCase name}} />', () => {
+describe('<GithubButton />', () => {
   it('should render the ...', () => {
-    const { container } = renderWithTheme(<{{pascalCase name}} />)
+    renderWithTheme(<GithubButton />)
 
     // expect(
     //   screen.getByRole('heading', { name: /Hauhauhaoh/i })
