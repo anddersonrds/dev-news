@@ -50,7 +50,7 @@ const GlobalStyles: GlobalStyleComponent<
     button {
       font-weight: ${theme.font.regular};
       font-family: ${theme.font.family};
-      font-size: ${theme.font.sizes.small};
+      font-size: ${theme.font.sizes.xxsmall};
     }
 
     button {

@@ -12,9 +12,14 @@ export default {
     bold: 700,
     black: 900,
     sizes: {
-      small: '1rem',
-      medium: '2rem',
-      large: '3rem'
+      xxsmall: '1rem',
+      xsmall: '1.5rem',
+      small: '2rem',
+      medium: '2.5rem',
+      large: '3rem',
+      xlarge: '3.5rem',
+      xxlarge: '4rem',
+      huge: '4.5rem'
     }
   },
   colors: {
