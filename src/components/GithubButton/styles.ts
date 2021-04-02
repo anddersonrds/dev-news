@@ -1,8 +1,9 @@
-import { FiX } from 'react-icons/fi'
 import styled, { css } from 'styled-components'
+import { FiX } from 'react-icons/fi'
+import { Session } from 'next-auth'
 
 type GithubBtnProps = {
-  isLogged: boolean
+  isLogged: Session | null | undefined
 }
 
 export const Wrapper = styled.button<GithubBtnProps>`

@@ -1,15 +1,21 @@
 import { FaGithub } from 'react-icons/fa'
+import { signIn, signOut, useSession } from 'next-auth/client'
 
 import * as S from './styles'
 
 const GithubButton = () => {
-  const isUserLogged = true
+  const [session] = useSession()
+
+  const handleButtonAction = (): Promise<void> => {
+    if (session) return signOut()
+    return signIn('github')
+  }
 
   return (
-    <S.Wrapper isLogged={isUserLogged}>
+    <S.Wrapper isLogged={session} onClick={handleButtonAction}>
       <FaGithub />
-      {isUserLogged ? 'Anderson Rodrigues' : 'Sign in with Github'}
-      {isUserLogged && <S.CloseButton />}
+      {session ? session.user.name : 'Sign in with Github'}
+      {session && <S.CloseButton />}
     </S.Wrapper>
   )
 }
