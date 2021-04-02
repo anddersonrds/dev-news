@@ -13,23 +13,17 @@ describe('<Home />', () => {
     renderWithTheme(<Home product={product} />)
 
     expect(
-      screen.getByRole('heading', {
-        name: /new about the react world\./i
-      })
+      screen.getByRole('heading', { name: /new about the react world\./i })
     ).toBeInTheDocument()
 
     expect(screen.getByText(/for 2\.5 month/i)).toBeInTheDocument()
 
     expect(
-      screen.getByRole('button', {
-        name: /subscribe now/i
-      })
+      screen.getByRole('button', { name: /subscribe now/i })
     ).toBeInTheDocument()
 
     expect(
-      screen.getByRole('img', {
-        name: /girl coding/i
-      })
+      screen.getByRole('img', { name: /girl coding/i })
     ).toBeInTheDocument()
   })
 })
