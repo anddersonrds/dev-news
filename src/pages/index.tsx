@@ -1,5 +1,5 @@
 import { GetStaticProps } from 'next'
-import { stripe } from 'services/strapi'
+import { stripe } from 'services/stripe'
 
 import Home, { HomeProps } from 'templates/Home'
 

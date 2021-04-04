@@ -1,5 +1,25 @@
+import { signIn, useSession } from 'next-auth/client'
+
 import * as S from './styles'
 
-const SubscribeButton = () => <S.Wrapper type="button">Subscribe now</S.Wrapper>
+type SubscribeButtonProps = {
+  priceId: string
+}
 
+const SubscribeButton = () => {
+  const [session] = useSession()
+
+  const handleSubscribe = () => {
+    if (!session) {
+      signIn('github')
+      return
+    }
+  }
+
+  return (
+    <S.Wrapper type="button" onClick={handleSubscribe}>
+      Subscribe now
+    </S.Wrapper>
+  )
+}
 export default SubscribeButton
